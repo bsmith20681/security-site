@@ -8,8 +8,50 @@
   width: 70%;
   max-width: 400px;
   z-index: 2;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
 
   &-list {
     list-style: none;
   }
+}
+
+.open {
+  transform: translateX(0);
+}
+
+.closeout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+  margin:0 15px 0 auto;
+
+  div {
+    width: 24px;
+    height: 2px;
+    background-color: black;
+  }
+  
+}
+
+#closeout-one {
+  transform:rotate(45deg) translateX(12px);
+  -webkit-transform:rotate(45deg) translateX(12px);
+  transform-origin:22%;
+  -webkit-transform-origin:22%;
+}
+
+
+#closeout-two {
+  transform:rotate(-45deg) translateY(10px);
+  -webkit-transform:rotate(-45deg) translateY(10px);
+  transform-origin:22%;
+  -webkit-transform-origin:22%;
 }

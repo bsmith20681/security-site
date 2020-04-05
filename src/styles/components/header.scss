@@ -9,10 +9,24 @@
   }
 
   &-item {
-    padding-left: 30px;
+    padding-right: 30px;
     a {
       color: black;
       text-decoration: none;
     }
   }
 }
+
+@media screen and (max-width: 768px){
+  .nav-item-list {
+    display:none;
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+  .side-menu-button{
+    display:none !important;
+  }
+}
+

@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
+import { Link, StaticQuery } from "gatsby"
 
 import SideMenuButton from "./SideMenuButton"
 import SideMenu from "./SideMenu"
@@ -16,11 +16,13 @@ const Header = props => {
     setSideMenuOpen(!sideMenuOpen)
   }
 
-  let sideMenu
+  const closeClickHandler = () => {
+    setSideMenuOpen(false)
+  }
+
   let backDrop
-  if (sideMenuOpen) {
-    sideMenu = <SideMenu />
-    backDrop = <BackDrop />
+  if (sideMenuOpen) { 
+    backDrop = <BackDrop click={closeClickHandler}/>
   }
   return (
     <header>
@@ -33,10 +35,9 @@ const Header = props => {
               alt="yourhomesecurityexpert.com logo"
             />
           </Link>
+          <SideMenuButton click={sideMenuClickHandler} />
+          {backDrop}
           <ul className="nav-item-list">
-            <SideMenuButton click={sideMenuClickHandler} />
-            {sideMenu}
-            {backDrop}
             <li className="nav-item">
               <Link to="/">Start Here</Link>
             </li>
@@ -47,6 +48,8 @@ const Header = props => {
               <Link to="/about">About</Link>
             </li>
           </ul>
+          <SideMenu show={sideMenuOpen} click={closeClickHandler}/>
+
         </div>
       </div>
     </header>
