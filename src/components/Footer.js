@@ -1,5 +1,7 @@
 import React from "react"
-import { Link } from 'gatsby'
+import { Link } from "gatsby"
+
+import logoFooter from "../images/your-home-security-expert-logo.png"
 
 const Footer = () => {
   return (
@@ -7,7 +9,11 @@ const Footer = () => {
       <div className="container">
         <div className="row footer">
           <div className="col-md-12">
-            <h1>Logo</h1>
+            <img
+              className="logo"
+              src={logoFooter}
+              alt="yourhomesecurityexpert.com logo"
+            />
           </div>
         </div>
         <div className="row">
@@ -15,24 +21,16 @@ const Footer = () => {
             <h4>Guides</h4>
             <ul className="footer-item-list">
               <li className="footer-item">
-                <Link>
-                  Article 1
-                </Link>
+                <Link>Article 1</Link>
               </li>
               <li className="footer-item">
-                <Link>
-                  Article 2
-                </Link>
+                <Link>Article 2</Link>
               </li>
               <li className="footer-item">
-                <Link>
-                  Article 3
-                </Link>
+                <Link>Article 3</Link>
               </li>
               <li className="footer-item">
-                <Link>
-                  Article 4
-                </Link>
+                <Link>Article 4</Link>
               </li>
             </ul>
           </div>
@@ -40,24 +38,16 @@ const Footer = () => {
             <h4>Guides</h4>
             <ul className="footer-item-list">
               <li className="footer-item">
-                <Link>
-                  Article 1
-                </Link>
+                <Link>Article 1</Link>
               </li>
               <li className="footer-item">
-                <Link>
-                  Article 2
-                </Link>
+                <Link>Article 2</Link>
               </li>
               <li className="footer-item">
-                <Link>
-                  Article 3
-                </Link>
+                <Link>Article 3</Link>
               </li>
               <li className="footer-item">
-                <Link>
-                  Article 4
-                </Link>
+                <Link>Article 4</Link>
               </li>
             </ul>
           </div>
@@ -65,24 +55,16 @@ const Footer = () => {
             <h4>Guides</h4>
             <ul className="footer-item-list">
               <li className="footer-item">
-                <Link>
-                  Article 1
-                </Link>
+                <Link>Article 1</Link>
               </li>
               <li className="footer-item">
-                <Link>
-                  Article 2
-                </Link>
+                <Link>Article 2</Link>
               </li>
               <li className="footer-item">
-                <Link>
-                  Article 3
-                </Link>
+                <Link>Article 3</Link>
               </li>
               <li className="footer-item">
-                <Link>
-                  Article 4
-                </Link>
+                <Link>Article 4</Link>
               </li>
             </ul>
           </div>
@@ -90,24 +72,16 @@ const Footer = () => {
             <h4>Guides</h4>
             <ul className="footer-item-list">
               <li className="footer-item">
-                <Link>
-                  Article 1
-                </Link>
+                <Link>Article 1</Link>
               </li>
               <li className="footer-item">
-                <Link>
-                  Article 2
-                </Link>
+                <Link>Article 2</Link>
               </li>
               <li className="footer-item">
-                <Link>
-                  Article 3
-                </Link>
+                <Link>Article 3</Link>
               </li>
               <li className="footer-item">
-                <Link>
-                  Article 4
-                </Link>
+                <Link>Article 4</Link>
               </li>
             </ul>
           </div>
