@@ -1,0 +1,37 @@
+.card {
+  padding: 35px;
+  box-shadow: 0 0 30px #eee;
+  -webkit-box-shadow: 0 0 30px #eee;
+  -moz-box-shadow: 0 0 30px #eee;
+  margin: 15px;
+
+  &:hover {
+    box-shadow: 0 0 60px #eee;
+    -webkit-box-shadow: 0 0 60px #eee;
+    -moz-box-shadow: 0 0 60px #eee;
+    cursor: pointer;
+
+    h4 {
+      color: #2862ff;
+    }
+  }
+
+  &Container {
+    justify-content: center;
+  }
+
+  h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 22px 0 22px 0;
+  }
+
+  p {
+    font-size: 18px;
+    margin: 30px 0 30px 0;
+
+    em {
+      font-size: 14px;
+    }
+  }
+}
