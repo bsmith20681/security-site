@@ -5,17 +5,19 @@ import signature from "../images/signature.png"
 
 import Layout from "../components/Layout"
 
+import "../styles/pages/about.scss"
+
 const About = () => {
   return (
     <Layout>
-      <div className="container">
+      <div className="container" id="about">
         <div className="row">
           <div className="col-md-12 text-center">
             <h2>
               Hi, I'm Ben and I am here to help you find the right security
               system for your home
             </h2>
-            <p>
+            <p id="about-intro">
               I have worked in the home security industry for over 5 years now.
               On this website I give you the inside scoop on all the security
               companies.

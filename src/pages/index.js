@@ -4,13 +4,14 @@ import { Link } from "gatsby"
 import profilePic from "../images/your-home-security-expert.com.png"
 
 import cardStyles from "../styles/components/card.module.scss"
+import buttonStyles from "../styles/components/button.module.scss"
 
 import Layout from "../components/Layout"
 
 const Index = () => {
   return (
     <Layout>
-      <div className="container">
+      <div className="container pt-large">
         <div className="row">
           <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
             <h1>Find the Right Home Security System is.... Confusing</h1>
@@ -18,15 +19,24 @@ const Index = () => {
               My name is Ben and I'm here to help. I've been in the home
               security industry for over 5 years now. I review the best home
               security companies in the industry. I'm here to give you the
-              <strong>insider scoop</strong> so you can choose the
-              <strong>right home security system</strong> for your home.
+              <strong> insider scoop</strong> so you can choose the
+              <strong> right home security system</strong> for your home.
             </p>
             <div className="row">
               <Link>
-                <button>Get Started</button>
+                <button
+                  style={{ marginRight: 20 }}
+                  className={`${buttonStyles.btn} ${buttonStyles.btnBlue}`}
+                >
+                  Get Started
+                </button>
               </Link>
               <Link to="/about">
-                <button>About Me</button>
+                <button
+                  className={`${buttonStyles.btn} ${buttonStyles.btnWhite}`}
+                >
+                  About Me
+                </button>
               </Link>
             </div>
           </div>
@@ -39,10 +49,10 @@ const Index = () => {
         </div>
         <hr />
       </div>
-      <div className="container">
+      <div className="container pt-large">
         <div className="row text-center">
           <div className="col-md-12">
-            <h1>Stop the Endless Searching Today</h1>
+            <h2>Stop the Endless Searching Today</h2>
             <p>
               Let's face it shopping for the right security system is time
               consuming and exhausting! There are so many options which is why
@@ -92,7 +102,7 @@ const Index = () => {
             </p>
           </div>
         </div>
-        <div className="row text-center">
+        <div className="row text-center pt-large">
           <div className="col-lg-12 col-md-12 col-xs-12">
             <h2>What if I only want Cameras?</h2>
             <p>
@@ -108,7 +118,9 @@ const Index = () => {
               outside security cameras.
             </p>
             <Link>
-              <button>See All Camera Options</button>
+              <button className={`${buttonStyles.btn} ${buttonStyles.btnBlue}`}>
+                See All Camera Options
+              </button>
             </Link>
           </div>
         </div>

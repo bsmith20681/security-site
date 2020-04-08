@@ -235,7 +235,7 @@ h1 {
   font-family: "Lato", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   line-height: 1.1;
 }
 h2 {
@@ -251,7 +251,7 @@ h2 {
   font-family: "Lato", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  font-size: 2.111rem;
   line-height: 1.1;
 }
 h3 {
@@ -382,6 +382,7 @@ p {
   padding-top: 0;
   margin-bottom: 1.45rem;
   line-height: 2rem;
+  font-size: 1.1111rem;
 }
 figure {
   margin-left: 0;
@@ -621,4 +622,8 @@ pre tt:after {
 .logo {
   width: 237px;
   height: 84px;
+}
+
+.pt-large {
+  padding-top: 80px;
 }
