@@ -5,5 +5,14 @@
  */
 
 module.exports = {
-  plugins: ["gatsby-plugin-sass"],
+  plugins: [
+    "gatsby-plugin-sass",
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-161943854-1",
+      },
+    },
+  ],
 }
