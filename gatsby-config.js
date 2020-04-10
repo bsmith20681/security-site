@@ -14,5 +14,13 @@ module.exports = {
         trackingId: "UA-161943854-1",
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "src",
+        path: `${__dirname}/src/`,
+      },
+    },
+    "gatsby-transformer-remark",
   ],
 }

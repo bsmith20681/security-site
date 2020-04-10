@@ -46,7 +46,7 @@ const About = () => {
           <div className="col-md-4 col-sm-12">
             <img
               src={profilePic}
-              alt="picture of ben from yourhomesecurityexpert.com"
+              alt="ben from yourhomesecurityexpert.com"
               style={{ width: 326 }}
             />
           </div>
