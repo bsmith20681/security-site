@@ -7,10 +7,12 @@ import cardStyles from "../styles/components/card.module.scss"
 import buttonStyles from "../styles/components/button.module.scss"
 
 import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 
 const Index = () => {
   return (
     <Layout>
+      <SEO />
       <div className="container pt-large">
         <div className="row">
           <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">

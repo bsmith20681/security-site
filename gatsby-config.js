@@ -1,10 +1,13 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
+  siteMetadata: {
+    title: "Your Home Security Expert",
+    titleTemplate: "%s | yourhomesecurityexpert.com",
+    description:
+      "Reviews and guides for Finding the best home security system for you.",
+    url: "https://www.doe.com", // No trailing slash allowed!
+    image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@occlumency",
+  },
   plugins: [
     "gatsby-plugin-sass",
     `gatsby-plugin-sitemap`,
@@ -22,5 +25,6 @@ module.exports = {
       },
     },
     "gatsby-transformer-remark",
+    `gatsby-plugin-react-helmet`,
   ],
 }

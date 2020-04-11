@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
+import SEO from "../components/SEO"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -25,6 +26,7 @@ const BlogPage = () => {
 
   return (
     <Layout>
+      <SEO description="This is a description for the blog page" />
       <h1>Blog</h1>
       <ul>
         {data.allMarkdownRemark.edges.map(edge => {
