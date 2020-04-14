@@ -1,5 +1,9 @@
 ---
 title: "vivint Reviews"
+description: "Hello, this is a review about vivint and this is my description"
+authorName: "Ben Smith"
+authorImg: "../images/author-round-photo.png"
+lastUpdated: "4/2/2020"
 ---
 
 #vivint review

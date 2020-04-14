@@ -1,5 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
 import profilePic from "../images/your-home-security-expert.com.png"
 
@@ -10,6 +11,21 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
 const Index = () => {
+  const data = useStaticQuery(graphql`
+    query images {
+      image: file(
+        relativePath: { eq: "images/your-home-security-expert.com.png" }
+      ) {
+        childImageSharp {
+          fixed(width: 350) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
+
+  console.log(data)
   return (
     <Layout>
       <SEO />
@@ -43,10 +59,7 @@ const Index = () => {
             </div>
           </div>
           <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <img
-              src={profilePic}
-              alt="picture of ben from yourhomesecurityexpert.com"
-            />
+            <Img fixed={data.image.childImageSharp.fixed} />
           </div>
         </div>
         <hr />

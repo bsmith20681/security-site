@@ -1,0 +1,16 @@
+.post {
+  &-title {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  &-info {
+    justify-content: center;
+  }
+
+  &-subInfo {
+    color: #777777;
+    font-size: 0.7222rem;
+    font-weight: 300;
+  }
+}

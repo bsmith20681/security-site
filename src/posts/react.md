@@ -1,6 +1,10 @@
 ---
 title: "This is a blog post"
-date: "4.9.2020"
+description: "Hello, this is a review about vivint and this is my description"
+date: "4/4/2020"
+authorName: "Ben Smith"
+authorImg: "../images/author-round-photo.png"
+lastUpdated: "4/2/2020"
 ---
 
 ## some test topics
