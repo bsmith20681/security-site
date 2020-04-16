@@ -26,14 +26,14 @@
     "gatsby-plugin-sitemap": "^2.3.1",
     "gatsby-remark-images": "^3.2.2",
     "gatsby-remark-relative-images": "^0.3.0",
-    "gatsby-remark-slug": "^0.1.0",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-remark": "^2.7.1",
     "gatsby-transformer-sharp": "^2.4.4",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.0.0"
+    "react-helmet": "^6.0.0",
+    "remark-slug": "^6.0.0"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",

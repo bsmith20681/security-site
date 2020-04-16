@@ -33,6 +33,7 @@ export const query = graphql`
 
 const Post = ({ data }) => {
   const { body, frontmatter, excerpt, tableOfContents, fields } = data.mdx
+  console.log(tableOfContents.items)
   return (
     <Layout>
       <SEO

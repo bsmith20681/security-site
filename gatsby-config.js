@@ -15,6 +15,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -36,16 +37,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [`gatsby-remark-slug`],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-mdx`,
+      resolve: "gatsby-plugin-mdx",
       options: {
         extensions: [`.mdx`, `.md`],
-        gatsbyRemarkPlugins: [],
+        remarkPlugins: [require("remark-slug")],
       },
     },
     {
