@@ -7,7 +7,7 @@ import SEO from "../components/SEO"
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMdx {
         edges {
           node {
             frontmatter {
@@ -29,7 +29,7 @@ const BlogPage = () => {
       <SEO description="This is a description for the blog page" />
       <h1>Blog</h1>
       <ul>
-        {data.allMarkdownRemark.edges.map(edge => {
+        {data.allMdx.edges.map(edge => {
           return (
             <li>
               <Link to={`/${edge.node.fields.slug}`}>
