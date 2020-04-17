@@ -1,9 +1,11 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
+
+import star from "../images/star.png"
 
 import "../styles/components/post.scss"
 
@@ -19,6 +21,9 @@ export const query = graphql`
         authorImg {
           absolutePath
         }
+        starRating
+        affLink
+        affTitle
       }
       body
       excerpt
@@ -56,8 +61,27 @@ const Post = ({ data }) => {
           {frontmatter.authorName}
         </p>
       </div>
-      <div>
-        <MDXRenderer>{body}</MDXRenderer>
+      <div className="row">
+        <div className="col-md-2">
+          {Array.apply(5, { length: frontmatter.starRating }).map((e, i) => (
+            <img className="post-star" src={star} key={i} />
+          ))}
+          <ul>
+            {tableOfContents.items.map(item => {
+              return (
+                <a href={item.url}>
+                  <li>{item.title}</li>
+                </a>
+              )
+            })}
+          </ul>
+          <a href={frontmatter.affLink} className="btn btn-green">
+            {frontmatter.affTitle}
+          </a>
+        </div>
+        <div className="col-md-10">
+          <MDXRenderer>{body}</MDXRenderer>
+        </div>
       </div>
     </Layout>
   )
