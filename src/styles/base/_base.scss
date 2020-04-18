@@ -628,3 +628,10 @@ pre tt:after {
 .pt-large {
   padding-top: 80px;
 }
+
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  height: 100%;
+  top: 0;
+}
