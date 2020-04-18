@@ -8,32 +8,34 @@ import SEO from "../components/SEO"
 import star from "../images/star.png"
 
 import "../styles/components/post.scss"
+import "../styles/components/toc.scss"
+import buttonStyles from "../styles/components/button.module.scss"
 
 export const query = graphql`
-  query PostBySlug($slug: String!) {
-    mdx(fields: { slug: { eq: $slug } }) {
-      frontmatter {
-        title
-        authorName
-        date
-        description
-        lastUpdated
-        authorImg {
-          absolutePath
-        }
-        starRating
-        affLink
-        affTitle
+query PostBySlug($slug: String!) {
+  mdx(fields: {slug: {eq: $slug}}) {
+    body
+    excerpt
+    tableOfContents
+    timeToRead
+    fields {
+      slug
+    }
+    frontmatter {
+      title
+      authorName
+      date
+      description
+      lastUpdated
+      authorImg {
+        publicURL
       }
-      body
-      excerpt
-      tableOfContents
-      timeToRead
-      fields {
-        slug
-      }
+      starRating
+      affLink
+      affTitle
     }
   }
+}
 `
 
 const Post = ({ data }) => {
@@ -48,35 +50,40 @@ const Post = ({ data }) => {
         pathname={fields.slug}
         article
       />
+      <div className="row" style={{justifyContent: "center"}}>
+      {Array.apply(5, { length: frontmatter.starRating }).map((e, i) => (
+            <img className="post-star" src={star} key={i} />
+          ))}
+      </div>
       <h1 className="text-center post-title">{frontmatter.title}</h1>
       <h3 className="text-center post-subtitle"></h3>
       <div className="row post-info">
-        <p>
-          <span className="post-subInfo">Last Updated</span> <br />
-          {frontmatter.lastUpdated}
-        </p>
-        <img src={frontmatter.authorImg.absolutePath} alt="Author's image" />
-        <p>
-          <span className="post-subInfo">Written By</span> <br />
-          {frontmatter.authorName}
-        </p>
+        <div>
+          <span className="post-subInfo">Last Updated</span>
+          <p>{frontmatter.lastUpdated}</p>
+        </div>
+        <img src={frontmatter.authorImg.publicURL} alt="Author's image" />
+        <div>
+          <span className="post-subInfo">Written By</span>
+          <p>{frontmatter.authorName}</p>
+        </div>
       </div>
       <div className="row">
         <div className="col-md-2">
           {Array.apply(5, { length: frontmatter.starRating }).map((e, i) => (
             <img className="post-star" src={star} key={i} />
           ))}
-          <ul>
+          <ul className="toc">
             {tableOfContents.items.map(item => {
               return (
-                <a href={item.url}>
+                <a className="toc-item" href={item.url}>
                   <li>{item.title}</li>
                 </a>
               )
             })}
           </ul>
-          <a href={frontmatter.affLink} className="btn btn-green">
-            {frontmatter.affTitle}
+          <a href={frontmatter.affLink} >
+            <button className={`${buttonStyles.btnSmall} ${buttonStyles.btnGreen}`}>{frontmatter.affTitle}</button>
           </a>
         </div>
         <div className="col-md-10">
