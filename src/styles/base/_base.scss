@@ -632,6 +632,8 @@ pre tt:after {
 .sticky {
   position: sticky;
   position: -webkit-sticky;
-  height: 100%;
+  min-height: 100%;
   top: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }

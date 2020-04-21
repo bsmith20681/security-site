@@ -1,10 +1,11 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import TOC from "../components/TOC"
+import TOCMobile from "../components/TOCMobile"
 
 import star from "../images/star.png"
 
@@ -39,6 +40,7 @@ export const query = graphql`
 `
 
 const Post = ({ data }) => {
+  const [dropMenuOpen, setDropMenuOpen] = useState(false)
   const { body, frontmatter, excerpt, tableOfContents, fields } = data.mdx
   const displayTOC = () => {
     let width = window.innerWidth
@@ -52,9 +54,16 @@ const Post = ({ data }) => {
         />
       )
     } else {
-      return <h1>hello on mobile</h1>
+      return (
+        <TOCMobile
+          titles={tableOfContents.items}
+          link={frontmatter.affLink}
+          buttonTitle={frontmatter.affTitle}
+        />
+      )
     }
   }
+
   return (
     <Layout>
       <SEO
