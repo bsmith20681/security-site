@@ -1,6 +1,6 @@
 import React from "react"
 import "../styles/components/toc.scss"
-import buttonStyles from "../styles/components/button.module.scss"
+
 import star from "../images/star.png"
 
 const TOC = props => {
@@ -19,9 +19,7 @@ const TOC = props => {
         })}
       </ul>
       <a href={props.link}>
-        <button className={`${buttonStyles.btnSmall} ${buttonStyles.btnGreen}`}>
-          {props.buttonTitle}
-        </button>
+        <button className="btnSmall btnGreen">{props.buttonTitle}</button>
       </a>
     </div>
   )

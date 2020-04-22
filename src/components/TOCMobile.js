@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import "../styles/components/toc.scss"
-import buttonStyles from "../styles/components/button.module.scss"
 import caretDown from "../images/caret-down.svg"
 
 const TOCMobile = props => {
@@ -46,9 +45,7 @@ const TOCMobile = props => {
         })}
       </ul>
       <a href={props.link}>
-        <button className={`${buttonStyles.btnSmall} ${buttonStyles.btnGreen}`}>
-          {props.buttonTitle}
-        </button>
+        <button className="btnSmall btnGreen">{props.buttonTitle}</button>
       </a>
     </div>
   )

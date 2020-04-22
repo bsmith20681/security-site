@@ -2,9 +2,6 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-import cardStyles from "../styles/components/card.module.scss"
-import buttonStyles from "../styles/components/button.module.scss"
-
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
@@ -23,7 +20,6 @@ const Index = () => {
     }
   `)
 
-  console.log(data)
   return (
     <Layout>
       <SEO />
@@ -40,19 +36,12 @@ const Index = () => {
             </p>
             <div className="row">
               <Link>
-                <button
-                  style={{ marginRight: 20 }}
-                  className={`${buttonStyles.btn} ${buttonStyles.btnBlue}`}
-                >
+                <button style={{ marginRight: 20 }} className="btn btnBlue">
                   Get Started
                 </button>
               </Link>
               <Link to="/about">
-                <button
-                  className={`${buttonStyles.btn} ${buttonStyles.btnWhite}`}
-                >
-                  About Me
-                </button>
+                <button className="btn btnWhite">About Me</button>
               </Link>
             </div>
           </div>
@@ -77,10 +66,8 @@ const Index = () => {
             </p>
           </div>
         </div>
-        <div className={`row ${cardStyles.cardContainer}`}>
-          <div
-            className={`col-lg-3 col-md-3 col-sm-12 col-xs-12 ${cardStyles.card}`}
-          >
+        <div className="row cardContainer">
+          <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12 card">
             <h4>Smart Home Security</h4>
             <p>
               Lights, cameras, thermostats, garage door, voice control, and
@@ -90,9 +77,7 @@ const Index = () => {
               <em>Examples: Vivint, ADT</em>
             </p>
           </div>
-          <div
-            className={`col-lg-3 col-md-3 col-sm-12 col-xs-12 ${cardStyles.card}`}
-          >
+          <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12 card">
             <h4>Standard Home Security</h4>
             <p>
               No fancy bells and whistles. Just affordable, and reliable home
@@ -102,9 +87,7 @@ const Index = () => {
               <em>Examples: CPI Security, Protect America, Monotronics</em>
             </p>
           </div>
-          <div
-            className={`col-lg-3 col-md-3 col-sm-12 col-xs-12 ${cardStyles.card}`}
-          >
+          <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12 card">
             <h4>DIY Security</h4>
             <p>
               The do-it-yourself security system. Save money by installing it on
@@ -131,9 +114,7 @@ const Index = () => {
               outside security cameras.
             </p>
             <Link>
-              <button className={`${buttonStyles.btn} ${buttonStyles.btnBlue}`}>
-                See All Camera Options
-              </button>
+              <button className="btn btnBlue">See All Camera Options</button>
             </Link>
           </div>
         </div>

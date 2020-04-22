@@ -1,5 +1,5 @@
 import React from "react"
-import { window, document, exists } from "browser-monads"
+import { window } from "browser-monads"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
