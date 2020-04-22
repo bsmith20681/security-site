@@ -7,7 +7,7 @@ import BackDrop from "./BackDrop"
 
 import logoHeader from "../images/your-home-security-expert-logo.png"
 
-import "../styles/index.scss"
+import "../styles/main.scss"
 
 const Header = props => {
   const [sideMenuOpen, setSideMenuOpen] = useState(false)
@@ -20,9 +20,15 @@ const Header = props => {
     setSideMenuOpen(false)
   }
 
+  const closeKeyHandler = e => {
+    if (e.keyCode === 8) {
+      setSideMenuOpen(false)
+    }
+  }
+
   let backDrop
   if (sideMenuOpen) {
-    backDrop = <BackDrop click={closeClickHandler} />
+    backDrop = <BackDrop click={closeClickHandler} key={closeKeyHandler} />
   }
   return (
     <header>
@@ -48,7 +54,11 @@ const Header = props => {
               <Link to="/about">About</Link>
             </li>
           </ul>
-          <SideMenu show={sideMenuOpen} click={closeClickHandler} />
+          <SideMenu
+            show={sideMenuOpen}
+            click={closeClickHandler}
+            key={closeKeyHandler}
+          />
         </div>
       </div>
     </header>

@@ -4,7 +4,7 @@ module.exports = {
     titleTemplate: "%s | yourhomesecurityexpert.com",
     description:
       "Reviews and guides for Finding the best home security system for you.",
-    url: "https://www.yourhomesecurityexpert.com", // No trailing slash allowed!
+    siteUrl: "https://www.yourhomesecurityexpert.com", // No trailing slash allowed!
     image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@occlumency",
     authorName: "Ben Smith",

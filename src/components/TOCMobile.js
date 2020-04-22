@@ -10,6 +10,12 @@ const TOCMobile = props => {
     setDropMenuOpen(!dropMenuOpen)
   }
 
+  const dropMenuKeyHandler = e => {
+    if (e.keyCode === 13) {
+      setDropMenuOpen(!dropMenuOpen)
+    }
+  }
+
   let dropMenuClasses = "hiddenMenu"
   let rotateCarot = "carot"
   if (dropMenuOpen) {
@@ -23,6 +29,9 @@ const TOCMobile = props => {
         className="row"
         style={{ justifyContent: "center" }}
         onClick={dropMenuClickHandler}
+        onKeyDown={dropMenuKeyHandler}
+        tabIndex="0"
+        role="button"
       >
         <p>Table of contents</p>
         <img className={rotateCarot} src={caretDown} alt="open menu" />

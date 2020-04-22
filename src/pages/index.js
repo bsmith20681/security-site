@@ -2,8 +2,6 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-import profilePic from "../images/your-home-security-expert.com.png"
-
 import cardStyles from "../styles/components/card.module.scss"
 import buttonStyles from "../styles/components/button.module.scss"
 

@@ -1,5 +1,6 @@
-import React, { useState } from "react"
-import { Link, graphql } from "gatsby"
+import React from "react"
+import { window, document, exists } from "browser-monads"
+import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Layout from "../components/Layout"
@@ -40,8 +41,8 @@ export const query = graphql`
 `
 
 const Post = ({ data }) => {
-  const [dropMenuOpen, setDropMenuOpen] = useState(false)
   const { body, frontmatter, excerpt, tableOfContents, fields } = data.mdx
+
   const displayTOC = () => {
     let width = window.innerWidth
     if (width > 768) {
@@ -75,7 +76,7 @@ const Post = ({ data }) => {
       />
       <div className="row" style={{ justifyContent: "center" }}>
         {Array.apply(5, { length: frontmatter.starRating }).map((e, i) => (
-          <img className="post-star" src={star} key={i} />
+          <img className="post-star" alt="star rating" src={star} key={i} />
         ))}
       </div>
       <h1 className="text-center post-title">{frontmatter.title}</h1>
@@ -85,7 +86,7 @@ const Post = ({ data }) => {
           <span className="post-subInfo">Last Updated</span>
           <p>{frontmatter.lastUpdated}</p>
         </div>
-        <img src={frontmatter.authorImg.publicURL} alt="Author's image" />
+        <img src={frontmatter.authorImg.publicURL} alt="Author" />
         <div>
           <span className="post-subInfo">Written By</span>
           <p>{frontmatter.authorName}</p>

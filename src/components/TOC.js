@@ -7,7 +7,7 @@ const TOC = props => {
   return (
     <div className="col-md-2 sticky">
       {Array.apply(5, { length: props.stars }).map((e, i) => (
-        <img className="post-star" src={star} key={i} />
+        <img className="post-star" alt="star rating" src={star} key={i} />
       ))}
       <ul className="toc">
         {props.titles.map(item => {
