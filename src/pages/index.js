@@ -12,7 +12,7 @@ const Index = () => {
         relativePath: { eq: "images/your-home-security-expert.com.png" }
       ) {
         childImageSharp {
-          fixed(width: 350) {
+          fixed(width: 350, quality: 90) {
             ...GatsbyImageSharpFixed
           }
         }
