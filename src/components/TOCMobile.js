@@ -23,7 +23,7 @@ const TOCMobile = props => {
   }
 
   return (
-    <div className="col-md-2 sticky toc text-center">
+    <div className="col-md-2 sticky toc text-center" id="tocMobile-container">
       <div
         className="row"
         style={{ justifyContent: "center" }}

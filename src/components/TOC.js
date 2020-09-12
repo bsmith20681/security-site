@@ -4,7 +4,7 @@ import star from "../images/star.png"
 
 const TOC = props => {
   return (
-    <div className="col-md-2 sticky">
+    <div className="col-md-2 sticky" id="toc-container">
       {Array.apply(5, { length: props.stars }).map((e, i) => (
         <img className="post-star" alt="star rating" src={star} key={i} />
       ))}

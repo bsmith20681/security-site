@@ -43,29 +43,6 @@ export const query = graphql`
 const Post = ({ data }) => {
   const { body, frontmatter, excerpt, tableOfContents, fields } = data.mdx
 
-  const displayTOC = () => {
-    let width = window.innerWidth
-    console.log(width)
-    if (width > 768) {
-      return (
-        <TOC
-          stars={frontmatter.starRating}
-          titles={tableOfContents.items}
-          link={frontmatter.affLink}
-          buttonTitle={frontmatter.affTitle}
-        />
-      )
-    } else {
-      return (
-        <TOCMobile
-          titles={tableOfContents.items}
-          link={frontmatter.affLink}
-          buttonTitle={frontmatter.affTitle}
-        />
-      )
-    }
-  }
-
   return (
     <Layout>
       <SEO
@@ -94,7 +71,18 @@ const Post = ({ data }) => {
         </div>
       </div>
       <div className="row">
-        {displayTOC()}
+        <TOC
+          stars={frontmatter.starRating}
+          titles={tableOfContents.items}
+          link={frontmatter.affLink}
+          buttonTitle={frontmatter.affTitle}
+        />
+        <TOCMobile
+          titles={tableOfContents.items}
+          link={frontmatter.affLink}
+          buttonTitle={frontmatter.affTitle}
+        />
+
         <div className="col-md-10">
           <MDXRenderer>{body}</MDXRenderer>
         </div>
