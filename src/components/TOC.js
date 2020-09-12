@@ -1,6 +1,5 @@
 import React from "react"
 import "../styles/components/toc.scss"
-
 import star from "../images/star.png"
 
 const TOC = props => {

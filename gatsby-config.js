@@ -6,7 +6,7 @@ module.exports = {
       "Reviews and guides for Finding the best home security system for you.",
     siteUrl: "https://www.yourhomesecurityexpert.com", // No trailing slash allowed!
     image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
-    twitterUsername: "@occlumency",
+    twitterUsername: "",
     authorName: "Ben Smith",
   },
   plugins: [
