@@ -17,7 +17,7 @@ const Header = props => {
   }
 
   const closeClickHandler = () => {
-    setSideMenuOpen(false)
+    setSideMenuOpen(!sideMenuOpen)
   }
 
   const closeKeyHandler = e => {
@@ -26,10 +26,6 @@ const Header = props => {
     }
   }
 
-  let backDrop
-  if (sideMenuOpen) {
-    backDrop = <BackDrop click={closeClickHandler} key={closeKeyHandler} />
-  }
   return (
     <header>
       <div className="container">
@@ -42,7 +38,11 @@ const Header = props => {
             />
           </Link>
           <SideMenuButton click={sideMenuClickHandler} />
-          {backDrop}
+          <BackDrop
+            click={closeClickHandler}
+            show={sideMenuOpen}
+            key={closeKeyHandler}
+          />
           <ul className="nav-item-list">
             <li className="nav-item">
               <Link to="/">Start Here</Link>

@@ -12,8 +12,8 @@ module.exports = {
   plugins: [
     "gatsby-plugin-sass",
     `gatsby-plugin-sitemap`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     {
@@ -41,6 +41,16 @@ module.exports = {
       options: {
         extensions: [`.mdx`, `.md`],
         remarkPlugins: [require("remark-slug")],
+        plugins: [`gatsby-remark-images`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1033,
+              quality: 100,
+            },
+          },
+        ],
       },
     },
     {

@@ -1,9 +1,13 @@
 import React from "react"
 
 const BackDrop = props => {
+  let backDropClasses = ""
+  if (props.show) {
+    backDropClasses = "backdrop"
+  }
   return (
     <div
-      className="backdrop"
+      className={backDropClasses}
       role="button"
       tabIndex="0"
       onClick={props.click}
