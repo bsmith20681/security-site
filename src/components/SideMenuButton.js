@@ -2,7 +2,11 @@ import React from "react"
 
 const SideMenuButton = props => {
   return (
-    <button className="side-menu-button" onClick={props.click}>
+    <button
+      name="open mobile menu"
+      className="side-menu-button"
+      onClick={props.click}
+    >
       <div />
       <div />
       <div />
