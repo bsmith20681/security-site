@@ -17,9 +17,13 @@ const TOC = props => {
           )
         })}
       </ul>
-      <a href={props.link}>
-        <button className="btnSmall btnGreen">{props.buttonTitle}</button>
-      </a>
+      {props.buttonTitle === null ? (
+        <div></div>
+      ) : (
+        <a href={props.link}>
+          <button className="btnSmall btnGreen">{props.buttonTitle}</button>
+        </a>
+      )}
     </div>
   )
 }

@@ -21,10 +21,10 @@ const Footer = () => {
             <h4>HOME SECURITY</h4>
             <ul className="footer-item-list">
               <li className="footer-item">
-                <Link>Article 1</Link>
+                <Link to="/posts/vivint-review">Vivint Review</Link>
               </li>
               <li className="footer-item">
-                <Link>Article 2</Link>
+                <Link to="/posts/adt-review">ADT Review</Link>
               </li>
               <li className="footer-item">
                 <Link>Article 3</Link>

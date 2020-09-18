@@ -8,6 +8,7 @@ const BackDrop = props => {
   return (
     <div
       className={backDropClasses}
+      name="back drop for mobile menu"
       role="button"
       tabIndex="0"
       onClick={props.click}
