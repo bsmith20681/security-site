@@ -36,7 +36,10 @@ const Index = () => {
             </p>
             <div className="row">
               <Link>
-                <button style={{ marginRight: 20 }} className="btn btnBlue">
+                <button
+                  style={{ marginRight: 20 }}
+                  className="btn btnGreenText"
+                >
                   Get Started
                 </button>
               </Link>
@@ -114,7 +117,9 @@ const Index = () => {
               outside security cameras.
             </p>
             <Link>
-              <button className="btn btnBlue">See All Camera Options</button>
+              <button className="btn btnGreenText">
+                See All Camera Options
+              </button>
             </Link>
           </div>
         </div>
