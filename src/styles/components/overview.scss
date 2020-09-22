@@ -1,0 +1,24 @@
+.overview {
+  &-title {
+    margin: 0;
+  }
+
+  &-underline {
+    border-bottom: 2px solid grey;
+    width: 30%;
+  }
+
+  &-item {
+    text-decoration: none;
+    display: flex;
+
+    &-icon {
+      margin: 5px;
+    }
+
+    &-list {
+      list-style-type: none;
+      margin: 3px 0 0 0;
+    }
+  }
+}
