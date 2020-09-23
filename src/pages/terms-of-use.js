@@ -27,9 +27,9 @@ const Terms = () => {
             <ul>
               <li>
                 <p>
-                  Your Home Security Expert is not a website development
-                  advisor. Your Home Security Expert does not provide,
-                  recommend, or endorse any specific website development advice.
+                  Your Home Security Expert is not a home security advisor. Your
+                  Home Security Expert does not provide, recommend, or endorse
+                  any specific home security advice.
                 </p>
               </li>
               <li>
@@ -45,16 +45,16 @@ const Terms = () => {
               </li>
               <li>
                 <p>
-                  Use of yourhomesecurityexpert.comilderReport.com is at the
-                  User’s own discretion.
+                  Use of yourhomesecurityexpert.com is at the User’s own
+                  discretion.
                 </p>
               </li>
               <li>
                 <p>
-                  Content on this Website is not website development advice and
-                  is provided for informational purposes only. As such, it is
-                  not a replacement for website development advice from a
-                  qualified professional.
+                  Content on this Website is not home security advice and is
+                  provided for informational purposes only. As such, it is not a
+                  replacement for home security advice from a qualified
+                  professional.
                 </p>
               </li>
               <li>
@@ -74,7 +74,7 @@ const Terms = () => {
               services provided by Your Home Security Expert (“
               <strong>we</strong>” or “<strong>us</strong>” or “
               <strong>Your Home Security Expert</strong>
-              ”) through the yourhomesecurityexpert.comilderReport.com (“
+              ”) through the yourhomesecurityexpert.com (“
               <strong>Website</strong>”), and all content, services, and
               products available at or through the Website. These Terms of Use
               are very important and explain the relationship between us and
@@ -98,9 +98,9 @@ const Terms = () => {
               "Service" means all of the services provided by Your Home Security
               Expert, including but not limited to all Content, services, and
               products available through the Website. Your Home Security Expert
-              is not a website development advisor, and all forms of website
-              development advice or services are explicitly excluded from the
-              Service. "User," “you” and “your” refer to the person, company, or
+              is not a home security advisor, and all forms of home security
+              advice or services are explicitly excluded from the Service.
+              "User," “you” and “your” refer to the person, company, or
               organization that has visited or is using our Website and/or our
               Service.
             </p>
@@ -109,10 +109,10 @@ const Terms = () => {
             </p>
             <p>
               Your Home Security Expert provides an online information platform
-              that allows for the comparison of website builders. Our role is
-              limited to providing informational resources. Your Home Security
-              Expert is not offering website development services and does not
-              offer any website development advice, opinions, recommendations,
+              that allows for the comparison of home security systems. Our role
+              is limited to providing informational resources. Your Home
+              Security Expert is not offering home security services and does
+              not offer any home security advice, opinions, recommendations,
               referrals, or counseling. Your Home Security Expert maintains the
               Website for your personal information, entertainment, and
               enjoyment. Please feel free to browse and use the site. At the
@@ -144,10 +144,10 @@ const Terms = () => {
             </p>
             <p>
               Through articles, opinions, and other content on the Website, Your
-              Home Security Expert may provide general information about website
-              development. All such information is general in nature. Your Home
-              Security Expert makes no direct assessment of your website
-              development issues, needs, or requirements.
+              Home Security Expert may provide general information about home
+              security. All such information is general in nature. Your Home
+              Security Expert makes no direct assessment of your home security
+              issues, needs, or requirements.
             </p>
             <p>
               <strong>Release and Indemnification</strong>

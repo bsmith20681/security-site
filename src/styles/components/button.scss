@@ -42,3 +42,12 @@
   background-color: #dff6d9;
   color: #69c829;
 }
+
+.btnPurple {
+  color: white;
+  background-color: $purple;
+
+  &:hover {
+    background-color: #7154ff;
+  }
+}
