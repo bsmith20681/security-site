@@ -33,6 +33,7 @@ export const query = graphql`
           publicURL
         }
         starRating
+        TOC
         affLink
         affTitle
       }
@@ -52,6 +53,7 @@ const Post = ({ data }) => {
         pathname={fields.slug}
         article
       />
+
       <div className="row" style={{ justifyContent: "center" }}>
         {Array.apply(5, { length: frontmatter.starRating }).map((e, i) => (
           <img className="post-star" alt="star rating" src={star} key={i} />
@@ -71,21 +73,31 @@ const Post = ({ data }) => {
         </div>
       </div>
       <div className="row">
-        <TOC
-          stars={frontmatter.starRating}
-          titles={tableOfContents.items}
-          link={frontmatter.affLink}
-          buttonTitle={frontmatter.affTitle}
-        />
-        <TOCMobile
-          titles={tableOfContents.items}
-          link={frontmatter.affLink}
-          buttonTitle={frontmatter.affTitle}
-        />
-
-        <div className="col-md-10">
-          <MDXRenderer>{body}</MDXRenderer>
-        </div>
+        {frontmatter.TOC === true ? (
+          <React.Fragment>
+            {" "}
+            <TOC
+              stars={frontmatter.starRating}
+              titles={tableOfContents.items}
+              link={frontmatter.affLink}
+              buttonTitle={frontmatter.affTitle}
+            />
+            <TOCMobile
+              titles={tableOfContents.items}
+              link={frontmatter.affLink}
+              buttonTitle={frontmatter.affTitle}
+            />
+            <div className="col-md-10 box">
+              <MDXRenderer>{body}</MDXRenderer>
+            </div>
+          </React.Fragment>
+        ) : (
+          <React.Fragment>
+            <div className="col-md-12 box">
+              <MDXRenderer>{body}</MDXRenderer>
+            </div>
+          </React.Fragment>
+        )}
       </div>
     </Layout>
   )
