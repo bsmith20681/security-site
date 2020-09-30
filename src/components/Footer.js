@@ -27,7 +27,7 @@ const Footer = () => {
                 <Link to="/posts/adt-review">ADT Review</Link>
               </li>
               <li className="footer-item">
-                <Link>Article 3</Link>
+                <Link to="/posts/xfinity-review">Xfinity Review</Link>
               </li>
               <li className="footer-item">
                 <Link>Article 4</Link>

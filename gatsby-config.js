@@ -5,7 +5,7 @@ module.exports = {
     description:
       "Reviews and guides for Finding the best home security system for you.",
     siteUrl: "https://www.yourhomesecurityexpert.com", // No trailing slash allowed!
-    image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
+    image: "/images/your-home-security-expoert-logo.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "",
     authorName: "Ben Smith",
   },
@@ -20,6 +20,14 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-161943854-1",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.yourhomesecurityexpert.com",
+        sitemap: "https://www.yourhomesecurityexpert.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
     {
