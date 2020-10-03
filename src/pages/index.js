@@ -116,7 +116,7 @@ const Index = () => {
               Click on the button below to see what options I recommend for best
               outside security cameras.
             </p>
-            <Link>
+            <Link to="/posts/best-battery-powered-security-cameras-for-outdoors">
               <button className="btn btnGreenText">
                 See All Camera Options
               </button>
