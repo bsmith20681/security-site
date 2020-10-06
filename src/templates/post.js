@@ -72,8 +72,9 @@ const Post = ({ data }) => {
           <p>{frontmatter.authorName}</p>
         </div>
       </div>
-      <div className="row">
-        {frontmatter.TOC === true ? (
+
+      {frontmatter.TOC === true ? (
+        <div className="row">
           <React.Fragment>
             {" "}
             <TOC
@@ -91,14 +92,16 @@ const Post = ({ data }) => {
               <MDXRenderer>{body}</MDXRenderer>
             </div>
           </React.Fragment>
-        ) : (
+        </div>
+      ) : (
+        <div className="row justify-content-center">
           <React.Fragment>
-            <div className="col-md-12 box">
+            <div className="col-md-8 box">
               <MDXRenderer>{body}</MDXRenderer>
             </div>
           </React.Fragment>
-        )}
-      </div>
+        </div>
+      )}
     </Layout>
   )
 }

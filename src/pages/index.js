@@ -27,6 +27,7 @@ const Index = () => {
         <div className="row">
           <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
             <h1>Finding the Right Home Security System is.... Confusing</h1>
+
             <p>
               My name is Ben and I'm here to help. I've been in the home
               security industry for over 5 years now. I review the best home
@@ -80,6 +81,7 @@ const Index = () => {
               <em>Examples: Vivint, ADT</em>
             </p>
           </div>
+
           <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12 card">
             <h4>Standard Home Security</h4>
             <p>

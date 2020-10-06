@@ -38,7 +38,7 @@ const Footer = () => {
             <h4>DIY SYSTEMS</h4>
             <ul className="footer-item-list">
               <li className="footer-item">
-                <Link>Article 1</Link>
+                <Link to="/posts/simplisafe-review">SimpliSafe Review</Link>
               </li>
               <li className="footer-item">
                 <Link>Article 2</Link>
@@ -55,7 +55,9 @@ const Footer = () => {
             <h4>COMPARASIONS</h4>
             <ul className="footer-item-list">
               <li className="footer-item">
-                <Link>Article 1</Link>
+                <Link to="/posts/best-home-security-systems">
+                  Best Home Security Systems
+                </Link>
               </li>
               <li className="footer-item">
                 <Link>Article 2</Link>

@@ -48,7 +48,9 @@ const Header = props => {
               <Link to="/">Start Here</Link>
             </li>
             <li className="nav-item">
-              <Link to="/posts/react/">Home Security Systems</Link>
+              <Link to="/posts/best-home-security-systems">
+                Home Security Systems
+              </Link>
             </li>
             <li className="nav-item">
               <Link to="/posts/how-to-cancel-adt">DIY Security Systems</Link>
