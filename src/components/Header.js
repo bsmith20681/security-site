@@ -53,7 +53,9 @@ const Header = props => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/posts/how-to-cancel-adt">DIY Security Systems</Link>
+              <Link to="/posts/best-DIY-security-systems">
+                DIY Security Systems
+              </Link>
             </li>
             <li className="nav-item">
               <Link to="/posts/best-battery-powered-security-cameras-for-outdoors">

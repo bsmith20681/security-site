@@ -60,7 +60,9 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="footer-item">
-                <Link>Article 2</Link>
+                <Link to="/posts/best-DIY-security-systems">
+                  Best DIY Security Systems
+                </Link>
               </li>
               <li className="footer-item">
                 <Link>Article 3</Link>
