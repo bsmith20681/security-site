@@ -63,22 +63,30 @@ const Overview = props => {
         </div>
       </div>
       <div className="row">
-        <div className="col-md-12">
-          <p className="overview-title">
-            <strong>Contract</strong>
-          </p>
-          <div className="overview-underline"></div>
-          <p>{props.contract}</p>
-        </div>
+        {props.contract != null ? (
+          <div className="col-md-12 col-xs-12">
+            <p className="overview-title">
+              <strong>Contract</strong>
+            </p>
+            <div className="overview-underline"></div>
+            <p>{props.contract}</p>
+          </div>
+        ) : (
+          <div></div>
+        )}
       </div>
       <div className="row">
-        <div className="col-md-12">
-          <p className="overview-title">
-            <strong>Price</strong>
-          </p>
-          <div className="overview-underline"></div>
-          <p>{props.price}</p>
-        </div>
+        {props.price != null ? (
+          <div className="col-md-12 col-xs-12">
+            <p className="overview-title">
+              <strong>Price</strong>
+            </p>
+            <div className="overview-underline"></div>
+            <p>{props.price}</p>
+          </div>
+        ) : (
+          <div></div>
+        )}
       </div>
     </div>
   )

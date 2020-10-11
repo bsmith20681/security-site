@@ -30,24 +30,7 @@ const Footer = () => {
                 <Link to="/posts/xfinity-review">Xfinity Review</Link>
               </li>
               <li className="footer-item">
-                <Link>Article 4</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-            <h4>DIY SYSTEMS</h4>
-            <ul className="footer-item-list">
-              <li className="footer-item">
                 <Link to="/posts/simplisafe-review">SimpliSafe Review</Link>
-              </li>
-              <li className="footer-item">
-                <Link>Article 2</Link>
-              </li>
-              <li className="footer-item">
-                <Link>Article 3</Link>
-              </li>
-              <li className="footer-item">
-                <Link>Article 4</Link>
               </li>
             </ul>
           </div>
@@ -63,12 +46,6 @@ const Footer = () => {
                 <Link to="/posts/best-DIY-security-systems">
                   Best DIY Security Systems
                 </Link>
-              </li>
-              <li className="footer-item">
-                <Link>Article 3</Link>
-              </li>
-              <li className="footer-item">
-                <Link>Article 4</Link>
               </li>
             </ul>
           </div>

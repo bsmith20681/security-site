@@ -94,7 +94,7 @@ const Post = ({ data }) => {
           </React.Fragment>
         </div>
       ) : (
-        <div className="row justify-content-center">
+        <div className="row justify-content-center" style={{ padding: "5px" }}>
           <React.Fragment>
             <div className="col-md-8 box">
               <MDXRenderer>{body}</MDXRenderer>

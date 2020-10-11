@@ -70,37 +70,54 @@ const Index = () => {
             </p>
           </div>
         </div>
+
         <div className="row cardContainer">
           <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12 card">
-            <h4>Smart Home Security</h4>
-            <p>
-              Lights, cameras, thermostats, garage door, voice control, and
-              security monitoring. This is what I recommend.
-            </p>
-            <p>
-              <em>Examples: Vivint, ADT</em>
-            </p>
+            <Link
+              style={{ color: "black", textDecoration: "none" }}
+              to="/posts/best-home-security-systems"
+            >
+              <h4>Smart Home Security</h4>
+              <p>
+                Lights, cameras, thermostats, garage door, voice control, and
+                security monitoring. This is what I recommend.
+              </p>
+              <p>
+                <em>Examples: Vivint, ADT</em>
+              </p>
+            </Link>
           </div>
 
           <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12 card">
-            <h4>Standard Home Security</h4>
-            <p>
-              No fancy bells and whistles. Just affordable, and reliable home
-              security with professional installation. This is what I recommend.
-            </p>
-            <p>
-              <em>Examples: CPI Security, Protect America, Monotronics</em>
-            </p>
+            <Link
+              style={{ color: "black", textDecoration: "none" }}
+              to="/posts/vivint-review/"
+            >
+              <h4>Standard Home Security</h4>
+              <p>
+                No fancy bells and whistles. Just affordable, and reliable home
+                security with professional installation. This is what I
+                recommend.
+              </p>
+              <p>
+                <em>Examples: CPI Security, Protect America, Monotronics</em>
+              </p>
+            </Link>
           </div>
           <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12 card">
-            <h4>DIY Security</h4>
-            <p>
-              The do-it-yourself security system. Save money by installing it on
-              your own. This is what I recommend.
-            </p>
-            <p>
-              <em>Examples: Simplisafe, Frontpoint, Ring Alarm System</em>
-            </p>
+            <Link
+              style={{ color: "black", textDecoration: "none" }}
+              to="/posts/best-DIY-security-systems"
+            >
+              <h4>DIY Security</h4>
+              <p>
+                The do-it-yourself security system. Save money by installing it
+                on your own. This is what I recommend.
+              </p>
+              <p>
+                <em>Examples: Simplisafe, Frontpoint, Ring Alarm System</em>
+              </p>
+            </Link>
           </div>
         </div>
         <div className="row text-center pt-large">
