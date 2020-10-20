@@ -61,6 +61,12 @@ const Footer = () => {
               <li className="footer-item">
                 <Link to="/terms-of-use">Terms of Service</Link>
               </li>
+              <li className="footer-item">
+                <Link to="/blog">All Articles</Link>
+              </li>
+              <li className="footer-item">
+                <Link to="/sitemap.xml">Sitemap</Link>
+              </li>
             </ul>
           </div>
         </div>
